@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultView">
+            <connections>
+                <outlet property="labelOTP" destination="Ofv-Gc-DXq" id="Ugx-Id-kCF"/>
+                <outlet property="progressOTP" destination="IFf-VA-wYp" id="c2U-SF-rGL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ofv-Gc-DXq" userLabel="LabelResult">
+                    <rect key="frame" x="112" y="63" width="96.5" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-VA-wYp" userLabel="ProgressResult">
+                    <rect key="frame" x="124" y="114" width="72" height="2"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ofv-Gc-DXq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="V0D-fh-gw3"/>
+                <constraint firstItem="Ofv-Gc-DXq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YAJ-GN-yLs"/>
+                <constraint firstItem="Ofv-Gc-DXq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Z6L-dS-Krt"/>
+                <constraint firstItem="IFf-VA-wYp" firstAttribute="top" secondItem="Ofv-Gc-DXq" secondAttribute="bottom" constant="8" id="bZV-cK-WzH"/>
+                <constraint firstItem="IFf-VA-wYp" firstAttribute="width" secondItem="Ofv-Gc-DXq" secondAttribute="width" multiplier="0.75" id="fe4-mH-go6"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ofv-Gc-DXq" secondAttribute="trailing" constant="16" id="lkQ-Ty-J82"/>
+                <constraint firstItem="IFf-VA-wYp" firstAttribute="centerX" secondItem="Ofv-Gc-DXq" secondAttribute="centerX" id="r4q-FI-AJo"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="187.19999999999999" y="-187.55622188905548"/>
+        </view>
+    </objects>
+</document>
