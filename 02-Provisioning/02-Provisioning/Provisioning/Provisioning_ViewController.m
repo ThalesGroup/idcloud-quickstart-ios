@@ -43,6 +43,13 @@
     [super viewDidLoad];
     
     if (![EMCore isConfigured]) {
+        // Configure core with secure log.
+        SecureLogConfig *secureLogConfig = [[SecureLogConfig alloc] initWithConfigComponentsBuilder:^(SecureLogConfigComponents * _Nonnull components) {
+            components.publicKeyExponent = CFG_SECURE_LOG_RSA_KEY_EXPONENT();
+            components.publicKeyModulus = CFG_SECURE_LOG_RSA_KEY_MODULUS();
+        }];
+        [EMCore configureSecureLog:secureLogConfig];
+
         NSError *error = nil;
         // OTP module is required for token management and OTP calculation.
         EMOtpConfiguration *otpCFG = [EMOtpConfiguration defaultConfiguration];

@@ -42,6 +42,7 @@
 
 - (IBAction)configureProtector:(id)sender {
     // TODO: check if the Protector's core module is already configured
+    // TODO: configure the secure log on Protector's core module
     // TODO: prepare an OTP configuration
     // TODO: configure the Protector's core module
     // TODO: login to the password manager

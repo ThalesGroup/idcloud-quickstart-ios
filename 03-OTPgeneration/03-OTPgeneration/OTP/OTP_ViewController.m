@@ -93,7 +93,7 @@
 
 - (void)userPinWithCompletionHandler:(AuthPinHandler)completionHandler
 {
-    // TODO: create a EMSecureInputBuilderV2 by means of EMSecureInputService
+    // TODO: create a EMSecureInputBuilder by means of EMSecureInputService
     
     // TODO: use buildWithScrambling method to prepare an instance of EMSecureInputUi
     // TODO: implement the ^(id<EMPinAuthInput> firstPin, id<EMPinAuthInput> secondPin) block

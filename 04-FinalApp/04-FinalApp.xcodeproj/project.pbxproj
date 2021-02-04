@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20ED1A6625888324001C9BD2 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20ED1A6525888324001C9BD2 /* EzioMobile.framework */; };
 		6D792CBF23F6A67D008CB0E9 /* ProvisionerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792CAF23F6A67D008CB0E9 /* ProvisionerView.m */; };
 		6D792CC023F6A67D008CB0E9 /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D792CB023F6A67D008CB0E9 /* ProvisionerView.xib */; };
 		6D792CC123F6A67D008CB0E9 /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D792CB723F6A67D008CB0E9 /* ResultView.xib */; };
@@ -17,7 +18,6 @@
 		6D792CD123F6A6C0008CB0E9 /* Provisioning_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792CC723F6A6C0008CB0E9 /* Provisioning_Logic.m */; };
 		6D792CD223F6A6C0008CB0E9 /* OTP_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792CCB23F6A6C0008CB0E9 /* OTP_Logic.m */; };
 		6D792CD323F6A6C0008CB0E9 /* OTP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792CCC23F6A6C0008CB0E9 /* OTP_ViewController.m */; };
-		6D792CE323F6A786008CB0E9 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D792CDF23F6A786008CB0E9 /* EzioMobile.framework */; };
 		6D792CE423F6A87C008CB0E9 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F434848D22C655DB00792C4A /* libc++.1.tbd */; };
 		6D792CE523F6A87C008CB0E9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F434848B22C655D200792C4A /* CoreMedia.framework */; };
 		6D792CE623F6A87C008CB0E9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F434848922C655C200792C4A /* AVFoundation.framework */; };
@@ -30,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20ED1A6525888324001C9BD2 /* EzioMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EzioMobile.framework; path = ../Frameworks/Debug/EzioMobile.framework; sourceTree = "<group>"; };
 		6D792CAF23F6A67D008CB0E9 /* ProvisionerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvisionerView.m; sourceTree = "<group>"; };
 		6D792CB123F6A67D008CB0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProvisionerView.xib; sourceTree = "<group>"; };
 		6D792CB223F6A67D008CB0E9 /* ProvisionerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvisionerView.h; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		6D792CCD23F6A6C0008CB0E9 /* OTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTP.h; sourceTree = "<group>"; };
 		6D792CCE23F6A6C0008CB0E9 /* OTP_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTP_ViewController.h; sourceTree = "<group>"; };
 		6D792CCF23F6A6C0008CB0E9 /* OTP_Logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTP_Logic.h; sourceTree = "<group>"; };
-		6D792CDF23F6A786008CB0E9 /* EzioMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EzioMobile.framework; path = ../Debug/EzioMobile.framework; sourceTree = "<group>"; };
 		F43481A822C64B3200792C4A /* 04-FinalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "04-FinalApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43481AB22C64B3200792C4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F43481AC22C64B3200792C4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,11 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D792CE323F6A786008CB0E9 /* EzioMobile.framework in Frameworks */,
 				6D792CE423F6A87C008CB0E9 /* libc++.1.tbd in Frameworks */,
 				6D792CE523F6A87C008CB0E9 /* CoreMedia.framework in Frameworks */,
 				6D792CE623F6A87C008CB0E9 /* AVFoundation.framework in Frameworks */,
 				6D792CE723F6A87C008CB0E9 /* Accelerate.framework in Frameworks */,
+				20ED1A6625888324001C9BD2 /* EzioMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +184,7 @@
 		F43481C722C6559400792C4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6D792CDF23F6A786008CB0E9 /* EzioMobile.framework */,
+				20ED1A6525888324001C9BD2 /* EzioMobile.framework */,
 				F434848D22C655DB00792C4A /* libc++.1.tbd */,
 				F434848B22C655D200792C4A /* CoreMedia.framework */,
 				F434848922C655C200792C4A /* AVFoundation.framework */,
@@ -220,7 +220,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Simon Nebesky";
+				ORGANIZATIONNAME = "Thales DIS";
 				TargetAttributes = {
 					F43481A722C64B3200792C4A = {
 						CreatedOnToolsVersion = 10.0;
@@ -444,14 +444,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LMY4YJ949Q;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/$(CONFIGURATION)";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = "04-FinalApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gemalto.-4-FinalApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,14 +465,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LMY4YJ949Q;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/$(CONFIGURATION)";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = "04-FinalApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gemalto.-4-FinalApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

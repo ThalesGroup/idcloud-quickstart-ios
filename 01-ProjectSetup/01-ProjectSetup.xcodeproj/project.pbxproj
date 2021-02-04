@@ -117,7 +117,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Simon Nebesky";
+				ORGANIZATIONNAME = "Thales DIS";
 				TargetAttributes = {
 					F43480EE22C0ED7A00792C4A = {
 						CreatedOnToolsVersion = 10.0;
