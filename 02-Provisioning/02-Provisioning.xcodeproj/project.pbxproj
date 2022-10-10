@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20ED1A8225888580001C9BD2 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20ED1A8125888580001C9BD2 /* EzioMobile.framework */; };
 		20ED1A85258885BD001C9BD2 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20ED1A83258885B2001C9BD2 /* libc++.1.tbd */; };
 		6D792C8823F6A5A2008CB0E9 /* ProvisionerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792C7723F6A5A2008CB0E9 /* ProvisionerView.m */; };
 		6D792C8923F6A5A2008CB0E9 /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D792C7823F6A5A2008CB0E9 /* ProvisionerView.xib */; };
 		6D792C8D23F6A5A2008CB0E9 /* LoadingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792C8423F6A5A2008CB0E9 /* LoadingIndicatorView.m */; };
 		6D792C8E23F6A5A2008CB0E9 /* LoadingIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D792C8523F6A5A2008CB0E9 /* LoadingIndicatorView.xib */; };
+		E061697828EFBA5300205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E061697728EFBA5300205220 /* EzioMobile.xcframework */; };
+		E061697928EFBA5300205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E061697728EFBA5300205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F434816722C602B900792C4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F434816622C602B900792C4A /* AppDelegate.m */; };
 		F434816D22C602B900792C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F434816B22C602B900792C4A /* Main.storyboard */; };
 		F434816F22C602BC00792C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F434816E22C602BC00792C4A /* Assets.xcassets */; };
@@ -22,8 +23,21 @@
 		F434818122C606A600792C4A /* Provisioning_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = F434817F22C606A600792C4A /* Provisioning_Logic.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E061697A28EFBA5300205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E061697928EFBA5300205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		20ED1A8125888580001C9BD2 /* EzioMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EzioMobile.framework; path = "../03-OTPgeneration/Frameworks/Debug/EzioMobile.framework"; sourceTree = "<group>"; };
 		20ED1A83258885B2001C9BD2 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		6D792C7723F6A5A2008CB0E9 /* ProvisionerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvisionerView.m; sourceTree = "<group>"; };
 		6D792C7923F6A5A2008CB0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProvisionerView.xib; sourceTree = "<group>"; };
@@ -33,6 +47,7 @@
 		6D792C8423F6A5A2008CB0E9 /* LoadingIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingIndicatorView.m; sourceTree = "<group>"; };
 		6D792C8623F6A5A2008CB0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingIndicatorView.xib; sourceTree = "<group>"; };
 		6D792C8723F6A5A2008CB0E9 /* LoadingIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingIndicatorView.h; sourceTree = "<group>"; };
+		E061697728EFBA5300205220 /* EzioMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EzioMobile.xcframework; path = Frameworks/$CONFIGURATION/EzioMobile.xcframework; sourceTree = "<group>"; };
 		F434816222C602B900792C4A /* 02-Provisioning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-Provisioning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F434816522C602B900792C4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F434816622C602B900792C4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20ED1A8225888580001C9BD2 /* EzioMobile.framework in Frameworks */,
+				E061697828EFBA5300205220 /* EzioMobile.xcframework in Frameworks */,
 				20ED1A85258885BD001C9BD2 /* libc++.1.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,8 +145,8 @@
 		F434818422C6229700792C4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E061697728EFBA5300205220 /* EzioMobile.xcframework */,
 				20ED1A83258885B2001C9BD2 /* libc++.1.tbd */,
-				20ED1A8125888580001C9BD2 /* EzioMobile.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +172,7 @@
 				F434815E22C602B900792C4A /* Sources */,
 				F434815F22C602B900792C4A /* Frameworks */,
 				F434816022C602B900792C4A /* Resources */,
+				E061697A28EFBA5300205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -385,8 +401,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/$(CONFIGURATION)";
+				DEVELOPMENT_TEAM = "";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = "02-Provisioning/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -396,6 +413,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gemalto.-2-Provisioning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -405,8 +423,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/$(CONFIGURATION)";
+				DEVELOPMENT_TEAM = "";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = "02-Provisioning/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -416,6 +435,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gemalto.-2-Provisioning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

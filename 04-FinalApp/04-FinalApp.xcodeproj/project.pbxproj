@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20ED1A6625888324001C9BD2 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20ED1A6525888324001C9BD2 /* EzioMobile.framework */; };
 		6D792CBF23F6A67D008CB0E9 /* ProvisionerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D792CAF23F6A67D008CB0E9 /* ProvisionerView.m */; };
 		6D792CC023F6A67D008CB0E9 /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D792CB023F6A67D008CB0E9 /* ProvisionerView.xib */; };
 		6D792CC123F6A67D008CB0E9 /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D792CB723F6A67D008CB0E9 /* ResultView.xib */; };
@@ -22,6 +21,7 @@
 		6D792CE523F6A87C008CB0E9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F434848B22C655D200792C4A /* CoreMedia.framework */; };
 		6D792CE623F6A87C008CB0E9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F434848922C655C200792C4A /* AVFoundation.framework */; };
 		6D792CE723F6A87C008CB0E9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F434848722C655BB00792C4A /* Accelerate.framework */; };
+		E061697E28EFBE1B00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E061697D28EFBE1B00205220 /* EzioMobile.xcframework */; };
 		F43481AD22C64B3200792C4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F43481AC22C64B3200792C4A /* AppDelegate.m */; };
 		F43481B322C64B3200792C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43481B122C64B3200792C4A /* Main.storyboard */; };
 		F43481B522C64B3200792C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43481B422C64B3200792C4A /* Assets.xcassets */; };
@@ -30,7 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		20ED1A6525888324001C9BD2 /* EzioMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EzioMobile.framework; path = ../Frameworks/Debug/EzioMobile.framework; sourceTree = "<group>"; };
 		6D792CAF23F6A67D008CB0E9 /* ProvisionerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvisionerView.m; sourceTree = "<group>"; };
 		6D792CB123F6A67D008CB0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProvisionerView.xib; sourceTree = "<group>"; };
 		6D792CB223F6A67D008CB0E9 /* ProvisionerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvisionerView.h; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		6D792CCD23F6A6C0008CB0E9 /* OTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTP.h; sourceTree = "<group>"; };
 		6D792CCE23F6A6C0008CB0E9 /* OTP_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTP_ViewController.h; sourceTree = "<group>"; };
 		6D792CCF23F6A6C0008CB0E9 /* OTP_Logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTP_Logic.h; sourceTree = "<group>"; };
+		E061697D28EFBE1B00205220 /* EzioMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EzioMobile.xcframework; path = Frameworks/$CONFIGURATION/EzioMobile.xcframework; sourceTree = "<group>"; };
 		F43481A822C64B3200792C4A /* 04-FinalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "04-FinalApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43481AB22C64B3200792C4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F43481AC22C64B3200792C4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 				6D792CE523F6A87C008CB0E9 /* CoreMedia.framework in Frameworks */,
 				6D792CE623F6A87C008CB0E9 /* AVFoundation.framework in Frameworks */,
 				6D792CE723F6A87C008CB0E9 /* Accelerate.framework in Frameworks */,
-				20ED1A6625888324001C9BD2 /* EzioMobile.framework in Frameworks */,
+				E061697E28EFBE1B00205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +184,8 @@
 		F43481C722C6559400792C4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				20ED1A6525888324001C9BD2 /* EzioMobile.framework */,
 				F434848D22C655DB00792C4A /* libc++.1.tbd */,
+				E061697D28EFBE1B00205220 /* EzioMobile.xcframework */,
 				F434848B22C655D200792C4A /* CoreMedia.framework */,
 				F434848922C655C200792C4A /* AVFoundation.framework */,
 				F434848722C655BB00792C4A /* Accelerate.framework */,
@@ -445,7 +445,6 @@
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/$(CONFIGURATION)";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = "04-FinalApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,7 +465,6 @@
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/$(CONFIGURATION)";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = "04-FinalApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
